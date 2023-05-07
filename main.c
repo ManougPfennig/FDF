@@ -6,12 +6,11 @@
 /*   By: mapfenni <mapfenni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/07 14:42:38 by mapfenni          #+#    #+#             */
-/*   Updated: 2023/05/07 15:55:26 by mapfenni         ###   ########.fr       */
+/*   Updated: 2023/05/07 16:16:52 by mapfenni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fractol_header.h"
-#include "ft_printf.h"
 
 int	main()
 {
@@ -32,6 +31,6 @@ int	main()
         ft_printf("Error: Could not open new window -> Program interrupted");
 		exit(EXIT_FAILURE);
 	}
-	
+	mlx_loop(mlx_ptr);
 	exit(EXIT_SUCCESS);
 }

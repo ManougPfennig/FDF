@@ -6,7 +6,7 @@
 /*   By: mapfenni <mapfenni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/07 15:44:03 by mapfenni          #+#    #+#             */
-/*   Updated: 2023/05/07 15:44:06 by mapfenni         ###   ########.fr       */
+/*   Updated: 2023/05/07 16:31:59 by mapfenni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,8 @@
 # include <fcntl.h>
 # include <string.h>
 # include <mlx.h>
+# include "ft_printf.h"
 
-
+int	main();
 
 #endif
