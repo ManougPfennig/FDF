@@ -6,7 +6,7 @@
 /*   By: mapfenni <mapfenni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/07 15:43:57 by mapfenni          #+#    #+#             */
-/*   Updated: 2023/05/07 18:02:22 by mapfenni         ###   ########.fr       */
+/*   Updated: 2023/05/07 18:35:54 by mapfenni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,4 +51,12 @@ int	ft_strcmp(char *str, char *str2)
 	if (str[i] != str2[i])
 		return (0);
 	return (1);
+}
+
+void	my_mlx_pixel_put(t_data *data, int x, int y, int color)
+{
+	char	*dst;
+
+	dst = data->addr + (y * data->line_length + x * (data->bits_per_pixel / 8));
+	*(unsigned int*)dst = color;
 }
