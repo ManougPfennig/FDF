@@ -6,8 +6,8 @@
 /*   By: mapfenni <mapfenni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/07 15:43:57 by mapfenni          #+#    #+#             */
-/*   Updated: 2023/05/07 16:17:01 by mapfenni         ###   ########.fr       */
+/*   Updated: 2023/05/07 16:34:12 by mapfenni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fractol_header.h"
+#include "fractol.h"

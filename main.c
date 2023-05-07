@@ -6,11 +6,11 @@
 /*   By: mapfenni <mapfenni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/07 14:42:38 by mapfenni          #+#    #+#             */
-/*   Updated: 2023/05/07 16:16:52 by mapfenni         ###   ########.fr       */
+/*   Updated: 2023/05/07 16:34:03 by mapfenni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fractol_header.h"
+#include "fractol.h"
 
 int	main()
 {
