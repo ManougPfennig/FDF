@@ -1,14 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   FDF.c                                              :+:      :+:    :+:   */
+/*   fractol_header.h                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mapfenni <mapfenni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/07 14:31:23 by mapfenni          #+#    #+#             */
-/*   Updated: 2023/05/07 14:47:53 by mapfenni         ###   ########.fr       */
+/*   Created: 2023/05/07 15:44:03 by mapfenni          #+#    #+#             */
+/*   Updated: 2023/05/07 15:44:06 by mapfenni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "FDF_header.h"
+#ifndef FRACTOL_HEADER_H
+# define FRACTOL_HEADER_H
 
+# include <stdio.h>
+# include <stdlib.h>
+# include <unistd.h>
+# include <fcntl.h>
+# include <string.h>
+# include <mlx.h>
+
+
+
+#endif
