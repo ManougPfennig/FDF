@@ -6,7 +6,7 @@
 /*   By: mapfenni <mapfenni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/07 14:42:38 by mapfenni          #+#    #+#             */
-/*   Updated: 2023/05/08 18:43:54 by mapfenni         ###   ########.fr       */
+/*   Updated: 2023/05/08 19:19:44 by mapfenni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@ int	main(int ac, char **av)
 	t_data	data;
 
 	data.dir = 1;
+	data.size = 20;
 	if (arg_parsing(ac, av))
 		exit(EXIT_FAILURE);
 	data.mlx = mlx_init();
@@ -31,7 +32,7 @@ int	main(int ac, char **av)
 		ft_printf("Error: Could not mlx_new_window -> Program interrupted\n");
 		exit(EXIT_FAILURE);
 	}
-	data.x = 500;
+	data.x = 0;
 	data.y = 350;
 	data.img = mlx_new_image(data.mlx, 1000, 700);
 	data.addr = mlx_get_data_addr(data.img, &data.bits_per_pixel, &data.line_length, \

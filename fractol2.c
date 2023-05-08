@@ -6,7 +6,7 @@
 /*   By: mapfenni <mapfenni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/08 17:24:48 by mapfenni          #+#    #+#             */
-/*   Updated: 2023/05/08 18:41:44 by mapfenni         ###   ########.fr       */
+/*   Updated: 2023/05/08 19:14:04 by mapfenni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int	key_pressed(int key, t_data *data)
 	if (key == 53)
 	{
 		ft_printf("Exiting...\n");
-		// mlx_destroy_window(data->mlx, data->win);
+		mlx_destroy_window(data->mlx, data->win);
 		exit(EXIT_SUCCESS);
 	}
 	// if (key == 17)
@@ -42,8 +42,7 @@ int	key_release(int key, t_data *data)
 
 int	ft_destroy_windows(t_data *data)
 {
-	if (data->win != NULL)
-		// mlx_destroy_window(data->mlx, data->win);
+	mlx_destroy_window(data->mlx, data->win);
 	ft_printf("Exiting...\n");
 	exit(EXIT_SUCCESS);
 	return (0);

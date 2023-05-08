@@ -6,7 +6,7 @@
 /*   By: mapfenni <mapfenni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/07 15:43:57 by mapfenni          #+#    #+#             */
-/*   Updated: 2023/05/08 18:48:18 by mapfenni         ###   ########.fr       */
+/*   Updated: 2023/05/08 19:26:34 by mapfenni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,55 +72,26 @@ void	generate_triangle(t_data *data)
 {
 	int length;
 
-	length = 100;
-	if (data->dir == 1)
-		data->dir = 0;
-	else if (data->dir == 0)
-		data->dir = 1;
-	while (length--)
+	length = 10 * data->size;
+	while (length-- && length > -1)
 	{
-		my_mlx_pixel_put(data, (data->x), (data->y), 0x00FF0000);
+		my_mlx_pixel_put(data, (data->x)++, (data->y)--, 0x00FF0000);
 		mlx_put_image_to_window(data->mlx, data->win, data->img, 0, 0);
-		if (data->dir == 0)
-		{
-			data->x++;
-			data->y--;
-			data->y--;
-		}
-		else
-		{
-			data->x--;
-			data->y++;
-			data->y++;
-		}
 	}
-	length = 100;
-	while (length--)
+	length = 10 * data->size;
+	while (length-- && length > -1)
 	{
-		my_mlx_pixel_put(data, (data->x), (data->y), 0x00FF0000);
+		my_mlx_pixel_put(data, (data->x)++, (data->y)++, 0x00FF0000);
 		mlx_put_image_to_window(data->mlx, data->win, data->img, 0, 0);
-		if (data->dir == 0)
-		{
-			data->x++;
-			data->y++;
-		}
-		else
-		{
-			data->x--;
-			data->y--;
-		}
 	}
-	length = 200;
-	while (length--)
+	length = 20 * data->size;
+	while (length-- && length > -1)
 	{
-		my_mlx_pixel_put(data, (data->x), (data->y), 0x00FF0000);
+		my_mlx_pixel_put(data, (data->x)--, (data->y), 0x00FF0000);
 		mlx_put_image_to_window(data->mlx, data->win, data->img, 0, 0);
-		if (data->dir == 0)
-			data->x--;
-		else
-			data->x++;
 	}
-	length = 100;
-	while (length--)
+	length = 10 * data->size;
+	while (length-- && length > -1)
 		data->x++;
+	data->size = (data->size / 2) + (data->size / 4);
 }

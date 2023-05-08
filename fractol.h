@@ -6,7 +6,7 @@
 /*   By: mapfenni <mapfenni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/07 15:44:03 by mapfenni          #+#    #+#             */
-/*   Updated: 2023/05/08 18:33:20 by mapfenni         ###   ########.fr       */
+/*   Updated: 2023/05/08 19:14:36 by mapfenni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,7 @@ typedef struct	s_data {
 	int		right;
 	int		up;
 	int		down;
+	int		size;
 }				t_data;
 
 int		main(int ac, char **av);
