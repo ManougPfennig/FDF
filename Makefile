@@ -6,13 +6,13 @@
 #    By: mapfenni <mapfenni@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/07 13:49:45 by mapfenni          #+#    #+#              #
-#    Updated: 2023/05/07 16:24:08 by mapfenni         ###   ########.fr        #
+#    Updated: 2023/05/08 17:40:28 by mapfenni         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = fractol
 
-SRCS = main.c fractol.c
+SRCS = main.c fractol.c fractol2.c
 
 OBJS = ${SRCS:.c=.o}
 
