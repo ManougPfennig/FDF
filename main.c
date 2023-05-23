@@ -6,7 +6,7 @@
 /*   By: mapfenni <mapfenni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/07 14:42:38 by mapfenni          #+#    #+#             */
-/*   Updated: 2023/05/08 19:19:44 by mapfenni         ###   ########.fr       */
+/*   Updated: 2023/05/23 16:29:03 by mapfenni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,12 +32,13 @@ int	main(int ac, char **av)
 		ft_printf("Error: Could not mlx_new_window -> Program interrupted\n");
 		exit(EXIT_FAILURE);
 	}
-	data.x = 0;
+	data.color = 0x00000000;
+	data.x = 500;
 	data.y = 350;
 	data.img = mlx_new_image(data.mlx, 1000, 700);
 	data.addr = mlx_get_data_addr(data.img, &data.bits_per_pixel, &data.line_length, \
 	&data.endian);
-	my_mlx_pixel_put(&data, data.x, data.y, 0x00FF0000);
+	my_mlx_pixel_put(&data, data.x, data.y, new_color(&data));
 	mlx_put_image_to_window(data.mlx, data.win, data.img, 0, 0);
 	mlx_hook(data.win, 2, 1L << 0, key_pressed, &data);
 	mlx_hook(data.win, 3, 1L << 1, key_release, &data);
